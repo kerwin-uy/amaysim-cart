@@ -1,0 +1,1 @@
+var pricingRules = {'ult_small': 24.9, 'ult_medium': 29.9, 'ult_large': 44.9, '1gb': 9.9};

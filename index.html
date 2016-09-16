@@ -1,0 +1,51 @@
+<script type="text/javascript" src="product.js"></script>
+<script type="text/javascript" src="pricingRules.js"></script>
+<script type="text/javascript" src="cart.js"></script>
+
+<script type="text/javascript">
+	//Scenario 1
+	cart = ShoppingCart.new(pricingRules);
+	
+	cart.add(products[0]);
+	cart.add(products[0]);
+	cart.add(products[0]);
+	cart.add(products[2]);
+	
+	console.log("Scenario 1");
+	cart.showCart();
+	
+	//Scenario 2
+	cart = ShoppingCart.new(pricingRules);
+	
+	cart.add(products[0]);
+	cart.add(products[0]);
+	cart.add(products[2]);
+	cart.add(products[2]);
+	cart.add(products[2]);
+	cart.add(products[2]);
+	
+	console.log("Scenario 2");
+	cart.showCart();
+	
+	//Scenario 3
+	cart = ShoppingCart.new(pricingRules);
+	
+	cart.add(products[0]);
+	cart.add(products[1]);
+	cart.add(products[1]);
+	
+	console.log("Scenario 3");
+	cart.showCart();
+	
+	//Scenario 4
+	cart = ShoppingCart.new(pricingRules);
+	
+	cart.add(products[0]);
+	cart.add(products[3], 'I<3AMAYSIM');
+	
+	console.log("Scenario 4");
+	cart.showCart();
+</script>
+<body>
+	Please open console to see output.
+</body>
